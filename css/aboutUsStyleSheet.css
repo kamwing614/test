@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+  margin: 0;
+}
+
+/* header part */
+a.button {
+  color: white
+}
+
+/* Globally */
+/* Each state */
+a.button:visited {
+  text-decoration: none;
+}
+
+a.button:hover {
+  text-decoration: none;
+}
+
+a.button:focus {
+  text-decoration: none;
+}
+
+a.button:hover, a:active {
+  text-decoration: none;
+  color: black
+}
+
+/* Style the header */
+.header {
+  background-color: #00BFFF;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  height: 125px;
+  /* overflow: hidden; */
+}
+
+.logo {
+  float: left;
+}
+
+.menu {
+  position: absolute;
+  font-size: 30px;
+  left: auto;
+  bottom: 10%;
+  right: 7.5%;
+  color: white;
+}
+
+.button {
+  margin: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* end of header part */
+
+/* Style the content */
+.content {
+  background-color: white;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.section {
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Style the footer */
+hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+}
+
+.footer {
+  background-color: white;
+  padding: 10px;
+}

@@ -1,0 +1,145 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>主頁 </title>
+  <link rel="stylesheet" type="text/css" href="css/homeStyleSheet.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="pic/homePic/logo.jpeg" alt="company logo" style="width:200px;height:125px">
+    </div>
+    <div class="menu">
+      <a href="home.html" class="button">主頁</a>
+      <a href="aboutUs.html" class="button">公司簡介</a>
+
+      <div class="dropdown">
+        <a href="service.html" class="dropbtn button">服務</a>
+        <div class="dropdown-content">
+          <a href="decoration.html">裝修工程</a>
+          <a href="hrPage.html">人力資源</a>
+          <a href="exhibition.html">展覽工程</a>
+
+        </div>
+      </div>
+
+
+      <a href="contactUs.html" class="button">聯絡我們</a>
+    </div>
+
+  </div>
+
+
+
+  <div class="ServiceSlides">
+    <img class="slides" src="pic/homePic/HR.jpg" alt="HumanResource">
+    <img class="slides" src="pic/homePic/decoration.jpg" alt="decoration">
+    <img class="slides" src="pic/homePic/exhibition.jpg" alt="exhibition">
+
+  </div>
+
+
+  <div class="grid-container">
+    <div class="gridServiceOdd">
+      <h2 class="serviceName">裝修工程</h2>
+
+      <p class="serviceDescription">
+        室內/室外裝修工程一律承接。
+        <a href="decoration.html">了解更多</a>
+
+      </p>
+    </div>
+
+    <div class="gridPicOdd">
+      <img src="pic/homePic/pineapple.jpg" alt="Pineapple" style="width:100%;height:100%;">
+
+
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="gridServiceEven">
+      <h2 class="serviceName">人力資源服務</h2>
+      <p class="serviceDescription">
+        歡迎外判合作。
+        <a href="hrPage.html">了解更多</a>
+      </p>
+    </div>
+
+    <div class="gridPicEven">
+      <img src="pic/homePic/pineapple.jpg" alt="Pineapple" style="width:100%;height:100%;">
+
+
+    </div>
+  </div>
+
+
+
+  <div class="grid-container">
+    <div class="gridServiceOdd">
+      <h2 class="serviceName">展覽工程</h2>
+      <p class="serviceDescription">
+        承接任何商場/會展/機博展覽工程。
+        <a href="exhibition.html">了解更多</a>
+      </p>
+    </div>
+    <div class="gridPicOdd">
+      <img src="pic/homePic/pineapple.jpg" alt="Pineapple" style="width:100%;height:100%;">
+
+
+    </div>
+  </div>
+
+
+
+  <br>
+
+
+
+  <div class=footer>
+    <hr>
+    <footer>
+      <a class="media" href="https://www.telegram.com">
+        <img src="pic/footer/tg.png" alt="telegram" style="width:40px;height:40px;border:0;">
+      </a>
+      <a class="media" href="https://www.whatsapp.com">
+        <img src="pic/footer/wtsapp.png" alt="whatsapp" style="width:40px;height:40px;border:0;">
+      </a>
+      <a class="media" href="https://www.facebook.com">
+        <img src="pic/footer/fb.png" alt="facebook" style="width:40px;height:40px;border:0;">
+      </a>
+      <a class="media" href="https://www.instagram.com">
+        <img src="pic/footer/ig.jpg" alt="instagram" style="width:40px;height:40px;border:0;">
+
+      </a>
+      <a href="mailto:kamwing614@gmail.com">email</a>
+      <p>Copyright &copy; 2020 BraveNew Company. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    let myIndex = 0;
+    carousel();
+
+    function carousel() {
+
+
+      let x = document.getElementsByClassName("slides");
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1;
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+  </script>
+
+</body>
